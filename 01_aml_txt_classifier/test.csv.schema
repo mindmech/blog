@@ -1,0 +1,22 @@
+{
+    "version": "1.0",
+    "rowId": "id",
+    "targetAttributeName": "annotation",
+    "dataFormat": "CSV",
+    "dataFileContainsHeader": true,
+    "attributes": [
+        {
+            "attributeName": "id",
+            "attributeType": "CATEGORICAL"
+        },
+        {
+            "attributeName": "message",
+            "attributeType": "TEXT"
+        },
+        {
+            "attributeName": "annotation",
+            "attributeType": "BINARY"
+        }
+        
+    ]
+}

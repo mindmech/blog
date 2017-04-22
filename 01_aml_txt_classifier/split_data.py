@@ -53,9 +53,9 @@ def get_split(data_dir, train_perc):
     
 def save_data(data, fname):
     '''
-    Saves an input list of samples into a CSV file.
+    Saves an input list of datapoints into a CSV file.
     
-    data:  the list of samples, each in triplets of: (review_id, message, annotation)
+    data:  the list of datapoints, each in triplets of: (review_id, message, annotation)
     fname: the CSV file name to save the data to.
     '''
     writer = csv.writer(open(fname, 'w', encoding='utf-8'))
@@ -63,7 +63,7 @@ def save_data(data, fname):
     for item in data:
         writer.writerow([item[0], item[1].replace('\n', ' '), item[2]])
         
-    print("Saved", len(data), "samples to file:", fname)
+    print("Saved", len(data), "datapoints to file:", fname)
 
 
 def main():
